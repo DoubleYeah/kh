@@ -1,0 +1,20 @@
+body{
+	margin: 0px;
+}
+
+#loadingAnime{
+	display: block;
+	width: 100%;
+	height:100%;
+	background-color: #161616;
+	z-index: 9998;
+}
+
+.nowloading_icon img{
+	animation: nowLoadingAnime 2s infinite linear both;
+}
+
+@keyframes nowLoadingAnime{
+	from {transform:rotateY(0deg);}
+	to {transform:rotateY(360deg);}
+}
